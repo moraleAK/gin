@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Rolandz"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="/css/screen.css" />
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script src="/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="/js/toc.js" type="text/javascript"></script>
+    <script src="/js/my_ad.js" type="text/javascript"></script>
+    <script src="/js/baidu.js" type="text/javascript"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#toc').toc({listType: 'ul', headers: 'h1, h2, h3, h4, h5, h6'});
+
+            var $root = $('html, body');  
+            $('a').click(function() {
+                var href = $.attr(this, 'href');
+                $root.animate(
+                    {
+                        scrollTop: $(href).offset().top
+                    }, 
+                    1000, 
+                    function () {
+                        window.location.hash = href;
+                    }
+                );
+                return false;
+            });
+        });
+
+    </script>
+</head>
+<body data-spy="scroll" data-target="#toc" data-offset="20">
+    <div class="navbar navbar-inverse " style="background-color:#28323C;">
+        <div class="container">
+            <div class="navbar-header" style="color: rgb(187, 187, 187);">
+                <a class="navbar-brand hidden-sm" style="font-family: 'Microsoft Yahei';font-weight: bold">Rolandz</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-sm hidden-md">
+                        <a href="/" style="font-family: 'Microsoft Yahei';font-weight: bold">home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 0px">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="site">
+                    {{ content }}
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="affix">
+                    <div id="toc"></div>   
+                    <a id="book_1" style="display: none" target="_blank"  href="https://amazon.cn/gp/product/B00WFSXDRM/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00WFSXDRM&linkCode=as2&tag=rolandz-23&linkId=7a8073e0bb8c67e706958c262d863358"><img class="img-thumbnail" src="//ws-cn.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=CN&ASIN=B00WFSXDRM&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=rolandz-23" ></a>
+                    
+                    <a id="book_2" style="display: none"  target="_blank"  href="https://amazon.cn/gp/product/B017MEN094/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B017MEN094&linkCode=as2&tag=rolandz-23&linkId=185126c26d172db1e0ed0eec1be5cf86"><img class="img-thumbnail" src="//ws-cn.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=CN&ASIN=B017MEN094&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=rolandz-23" ></a>
+
+                    <a id="book_5" style="display: none"  target="_blank"  href="https://amazon.cn/gp/product/B017MEN094/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B017MEN094&linkCode=as2&tag=rolandz-23&linkId=beca6d5eaaac1a0327662ef6a4ec462e"><img class="img-thumbnail" src="//ws-cn.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=CN&ASIN=B017MEN094&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=rolandz-23" ></a>
+
+                    <a id="book_3" style="display: none"  target="_blank"  href="https://amazon.cn/gp/product/B015317AG2/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B015317AG2&linkCode=as2&tag=rolandz-23&linkId=aa10559d1a1544c8f2178886718b7c14"><img class="img-thumbnail" src="//ws-cn.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=CN&ASIN=B015317AG2&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=rolandz-23" ></a>
+
+                    <a id="book_4"  style="display: none"  target="_blank"  href="https://amazon.cn/gp/product/B07HPY84KR/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B07HPY84KR&linkCode=as2&tag=rolandz-23&linkId=245071d5579efe550e8cf296dd61f8cd"><img class="img-thumbnail" src="//ws-cn.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=CN&ASIN=B07HPY84KR&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=rolandz-23" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container" style="font-size:12px; font-family: 'Adobe Hebrew', '宋体', sans-serif;color:#aaa;margin-bottom: 10px;">
+            © <a href="/" style="color:#aaa;">Rolandz</a> since 2014 | <a href="http://log.zvz.im/" style="color:#aaa;" target="_blank">ZVZ's 日志</a>
+        </div>
+    </div>
+
+</body>
+</html>
